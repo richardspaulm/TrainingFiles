@@ -20,7 +20,7 @@ function Person(firstName, lastName, age, hobby){
 //Object Initialization -- Create Objects as variable, with the assigned four values for each
 var Paul = new Person("Paul", "Richards", 25, "Coding");
 var Sunny = new Person("Sunny", "Balmiki", 25, "Football");
-var Dheeraj = new Person("Dheeraj", "Chettri", 23, "Reading");
+var Dheeraj = new Person("Dheeraj", "Chettri", 25, "Reading");
 var Ravi = new Person("Ravi", "Ranjan", 23, "Gaming");
 
 //Array of objects. Arrays can be all the same type, or different types.
@@ -92,7 +92,8 @@ var animals = ["Tiger", "Monkey", "Bear", "Fish", "Hippo", "Horse", "Lion", "Pau
 var testString = "abcdefghijklmnopqrstuvwxyz";
 
 //charAt ---- a function of the STRING object. Returns the character at the given index
-testString.charAt(0);
+var testChar = testString.charAt(1);
+
 
 //Logs any item from the given array to the console that starts with H or h.
 function FindTheH(arr){
@@ -103,3 +104,13 @@ function FindTheH(arr){
 	}
 }
 
+//Find the average age of our class
+function AverageAge(arr){
+	var TotalAge = 0;
+	for(var i = 0; i < arr.length; i++){
+		TotalAge += arr[i].age;
+	}
+	console.log(TotalAge / arr.length)
+}
+
+AverageAge(friends);
