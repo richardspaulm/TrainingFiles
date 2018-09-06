@@ -1,0 +1,61 @@
+h1{
+	background-color: tomato;
+	color: white;
+	text-decoration: underline;
+	border-bottom: solid black 5px;
+}
+p{
+	font-size: 30px;
+}
+
+#boxExample{
+	font-size: 20px;
+	width: 500px;
+	border: solid cyan 20px;
+	padding: 20px;
+	margin: 10px auto 20px auto;
+	background-color: darkblue;
+	color: white;
+	text-indent: 50px;
+	line-height: 50px;
+	font-family: 'Permanent Marker', cursive;
+}
+#boxExample:hover{
+	background-color: red;
+}
+
+.testLink{
+	display: inline-block;
+	font-size: 30px;
+	width: 170px;
+	height: 100px;
+	background-color: #780116;
+	border: dashed black 2px;
+	line-height: 100px;
+	padding-left: 50px;
+	color: white;
+	text-decoration: none;
+	margin: 20px;
+}
+.testLink:hover{
+	background-color: black;
+}
+ol{
+	list-style-type: upper-alpha;
+}
+ul{
+	list-style-type: none;
+}
+li{
+	display: inline-block;
+}
+img{
+	width: 500px;
+	display: block;	
+	margin: 50px;
+	border: solid 10px black;
+}
+img:hover{
+	width: 800px;
+	border: dotted 5px green;
+}

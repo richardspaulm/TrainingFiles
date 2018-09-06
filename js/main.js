@@ -10,18 +10,21 @@ if(a > 5 || 3 < 2)
 var camelCase;
 
 //Object Constructor -- Use to create an object with these four properties
-function Person(firstName, lastName, age, hobby){
+function Person(firstName, lastName, age, hobby, language){
 	this.firstName = firstName,
 	this.lastName = lastName,
 	this.age = age,
-	this.hobby = hobby
+	this.hobby = hobby,
+	this.FullName = function(){
+		console.log(this.firstName + " " + this.lastName);
+	}
 };
-
 //Object Initialization -- Create Objects as variable, with the assigned four values for each
 var Paul = new Person("Paul", "Richards", 25, "Coding");
 var Sunny = new Person("Sunny", "Balmiki", 25, "Football");
 var Dheeraj = new Person("Dheeraj", "Chettri", 25, "Reading");
 var Ravi = new Person("Ravi", "Ranjan", 23, "Gaming");
+
 
 //Array of objects. Arrays can be all the same type, or different types.
 var friends = [Paul, Sunny, Dheeraj, Ravi];
@@ -31,10 +34,7 @@ function FirstFunction(num){
 	return num*num;
 }
 
-//Takes in a Person object, and returns their full name
-function FullName(alias){
-	return alias.firstName + " " + alias.lastName;
-}
+
 
 //Returns the first name, a message, and a hobby for every item inside the array
 function NameAndHobby(arr){
@@ -113,4 +113,40 @@ function AverageAge(arr){
 	console.log(TotalAge / arr.length)
 }
 
-AverageAge(friends);
+// Parameter - The variable that we are going to use inside the function.
+// // Scope -- Local vs. Global
+// // // Local - Only accessible in the block of code that it was created in.
+// // // Global - Can be accessed anywhere inside of the program.
+
+
+var emptyArray = [];
+//Array Push -- Adds item to existing array
+emptyArray.push()
+
+
+//Push numbers from 1 - 100 into our empty array
+function ArrayPush(){
+	for(var i = 1; i <= 100; i++){
+		emptyArray.push(i);
+	}
+}
+ArrayPush();
+
+
+//Math object function
+var NewMath = {
+	SquareIt : function(num){
+		return num*num
+	},
+	SquareRoot: function(num){
+		return Math.sqrt(num);
+	},
+	Power : function(base, power){
+		var inputBase = base;
+		for(var i = 0; i < power - 1; i++){
+			base = base*inputBase;
+		}
+		return base;
+	}
+}
+
