@@ -147,6 +147,53 @@ var NewMath = {
 			base = base*inputBase;
 		}
 		return base;
+	},
+	//Nested Object
+	Calculator : {
+		Add : function(num1, num2){
+			return num1 + num2;
+		},
+		Subtract : function(num1, num2){
+			return num1 - num2;
+		},
+		Multiply : function(num1, num2){
+			return num1 * num2;
+		},
+		Divide : function(num1, num2){
+			return num1 / num2
+		}
+	},
+	SumAll : function(arr){
+		var sum = 0;
+		for(var i = 0; i < arr.length; i++){
+			sum += arr[i];
+		}
+		return sum;
+	},
+	FindMax : function(arr){
+		var max = -Infinity;
+		for(var i = 0; i < arr.length; i++){
+			if(arr[i] > max){
+				max = arr[i];
+			}
+		}
+		return max;
+	},
+	FindMin : function(arr){
+		var min = Infinity;
+		for(var i = 0; i < arr.length; i++){
+			if(arr[i] < min){
+				min = arr[i];
+			}
+		}
+		return min;
+	},
+	Factorial : function(num){
+		for(var i = (num-1); i > 0; i--){
+			num = num * i;
+		}
+		return num;
 	}
 }
+
 

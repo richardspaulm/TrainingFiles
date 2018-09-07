@@ -2,8 +2,45 @@
 <html>
 <head>
 	<title>Our Linked Page</title>
+<style>
+	.dateP{
+		margin: 0;
+		background-color: fuchsia;
+		font-size: 20px;
+		color: white;
+	}
+	#inputText{
+		display: block;
+		width: 400px;
+		height: 100px;
+		margin-bottom: 20px;
+	}
+
+</style>
 </head>
+
 <body>
-<h1>You Found me!</h1>
+
+<h1 id="mainHeader">You Found me!</h1>
+<h2>Header Number 2</h2>
+<h2>Header Number 2</h2>
+<h2>Header Number 2</h2>
+
+<h3 class="smallHead">Another Header</h3>
+<h4 class="smallHead">And Another</h4>
+<h5 class="smallHead">And Yet Anther</h5>
+
+<p class="smallHead">Hi</p>
+<p class="smallHead">Hi</p>
+
+<p id="letterCount">Number of letters: 0</p>
+<textarea id="inputText" onfocus="InputFocus()" onblur="InputBlur()" onkeydown="LetterCount()" ondblclick="SetSize()"></textarea>
+
+
+
+<button onclick="AddDate()">Click Me!</button>
+<div id="dateContainer"></div>
+
+<script src="./js/DOM.js"></script>
 </body>
 </html>
