@@ -55,3 +55,7 @@ function LetterCount(){
 	letterCount.innerHTML = inputText.value.length;
 }
 
+function SetSize(){
+	inputText.style.width = "400px";
+	inputText.style.height = "100px";
+}
